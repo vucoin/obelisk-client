@@ -1,0 +1,53 @@
+{
+    "name": "obelisk-client",
+    "version": "0.0.1",
+    "description": "Client for Bitcoin Obelisk server",
+    "author": {
+        "email": "info@vucoin.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/vucoin/obelisk-client.git"
+    },
+    "dependencies": {
+        "async": "0.8.x",
+        "base58-native": "0.1.x",
+        "bignum": "0.7.x",
+        "binary": "0.3.x",
+        "buffertools": "2.1.x",
+        "mustache": "0.8.x",
+        "nopt": "2.2.x",
+        "npmlog": "0.0.x",
+        "put": "0.0.x",
+        "sprintf": "0.1.x",
+        "zmq": "2.7.x",
+        "split": "^0.3.0"
+    },
+    "optionalDependencies": {
+        "bitcore": "*"
+    },
+    "devDependencies": {
+        "istanbul": "*",
+        "jshint": "*",
+        "mocha": "*",
+        "docker": "0.2.10"
+    },
+    "scripts": {
+        "test": "make test"
+    },
+    "engines": {
+        "node": ">=0.8.x"
+    },
+    "bugs": {
+        "url": "https://github.com/vucoin/obelisk-client/issues/new",
+        "email": "info@vucoin.com"
+    },
+    "keywords": [
+        "bitcoin",
+        "obelisk"
+    ],
+    "bin": {
+        "ob": "./bin/ob"
+    },
+    "license": "MIT"
+}
