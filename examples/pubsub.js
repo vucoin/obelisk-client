@@ -5,8 +5,14 @@ try {
 
     var showBlock = function(block) {
         var b = new bitcore.Block();
-        b.parse(block.header, true);
-        console.log('Block: ', b.height, b.getStandardizedObject());
+        var parser = new bitcore.BinaryParser(block.header);
+        b.parse(parser, true);
+
+        b = b.getStandardizedObject();
+        b.height = block.height; // bitcore parser doesn't set height from header
+        delete b.size; // block size is unknown in this context
+
+        console.log('Block:', b);
     };
 
     var showTx = function(txdata) {
