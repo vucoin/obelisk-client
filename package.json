@@ -1,6 +1,6 @@
 {
     "name": "obelisk-client",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Client for Bitcoin Obelisk server",
     "author": {
         "email": "info@vucoin.com"
@@ -10,7 +10,7 @@
         "url": "https://github.com/vucoin/obelisk-client.git"
     },
     "dependencies": {
-        "async": "0.8.x",
+        "async": ">=0.8.x",
         "base58-native": "0.1.x",
         "bignum": "0.7.x",
         "binary": "0.3.x",
