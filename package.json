@@ -20,7 +20,7 @@
         "npmlog": "0.0.x",
         "put": "0.0.x",
         "sprintf": "0.1.x",
-        "zmq": "2.7.x",
+        "zmq": "2.8.x",
         "split": "^0.3.0"
     },
     "optionalDependencies": {
